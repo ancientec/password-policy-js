@@ -19,7 +19,7 @@ JS Version (for frontend and backend):
 ## Install
 
 ```shell
-> npm install password-policy
+> npm install @ancientec/password-policy
 ```
 ## Develop & Unit Test
 

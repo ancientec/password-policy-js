@@ -1,5 +1,5 @@
 {
-    "name": "password-policy-js",
+    "name": "@ancientec/password-policy-js",
     "description": "helper function to generate password policies and validate against password",
     "version": "1.0.0",
     "keywords": [
