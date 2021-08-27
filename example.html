@@ -1,0 +1,16 @@
+<html>
+<head>
+    <script src="dist/password_policy.min.js"></script>
+</head>
+<body>
+<script>
+var passwordPolicy1 = new PasswordPolicy({"LengthMin" : 5}, {}, "policy1");
+var policy1 = PasswordPolicy.getPolicy("policy1");
+console.log(policy1['LengthMin']);
+console.log(passwordPolicy1.isValid("1234password"),passwordPolicy1.validate("1234password"));
+
+console.log(passwordPolicy1.isValid("12"),passwordPolicy1.validate("12"));
+
+</script>
+</body>
+</html>

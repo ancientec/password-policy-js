@@ -1,0 +1,14 @@
+/.github/
+/.vscode/
+/node_modules/
+/tmp/
+/docs/
+
+coverage
+*.log
+
+package-lock.json
+/*.tgz
+/tmp*
+/mnt/
+/package/

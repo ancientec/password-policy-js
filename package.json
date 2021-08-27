@@ -1,0 +1,36 @@
+{
+    "name": "password-policy-js",
+    "description": "helper function to generate password policies and validate against password",
+    "version": "1.0.0",
+    "keywords": [
+        "password",
+        "policy",
+        "rules",
+        "validation"
+    ],
+    "author": "Ancientec Co., Ltd.",
+    "main": "dist/password_policy.js",
+    "types": "dist/password_policy.d.ts",
+    "license": "MIT",
+    "repository": "https://github.com/ancientec/password-policy-js",
+    "scripts": {
+        "clean": "(rm -r ./dist || true)",
+        "clean:all": "npm run clean && (rm -r ./node_modules || true)",
+        "build": "npm run clean &&  tsc && npm run esbuild-browser",
+        "esbuild-browser": "esbuild src/browser.js --bundle --minify --outfile=dist/password_policy.min.js",
+        "docs": "typedoc --entryPoints src/password_policy.ts",
+        "test": "mocha -r ts-node/register test/**/*.ts"
+    },
+    "devDependencies": {
+        "@types/chai": "^4.2.21",
+        "@types/mocha": "^9.0.0",
+        "chai": "^4.1.2",
+        "esbuild": "^0.12.22",
+        "eslint": "^6.3.0",
+        "mocha": "^9.0.0",
+        "source-map-support": "^0.5.12",
+        "ts-node": "^10.0.0",
+        "typedoc": "^0.21.6",
+        "typescript": "^4.3.5"
+    }
+}
