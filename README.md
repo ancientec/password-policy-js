@@ -208,8 +208,7 @@ const policy = {
       "LengthMax" : 6,
       "ErrorStringFormat" : ErrorStringFormat};
 
-const passwordPolicy = new PasswordPolicy(
-      {"LengthMin" : 6, "LengthMax" : 6},errorStrings);
+const passwordPolicy = new PasswordPolicy(policy);
 
 passwordPolicy.validate("");
 /* result:
